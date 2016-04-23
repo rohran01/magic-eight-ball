@@ -1,0 +1,31 @@
+body {
+  background-color: #FFC760;
+}
+img {
+  border: 1px solid #333;
+}
+button {
+  margin-top: 10px;
+}
+
+
+.jumbotron, .footer {
+  background-color: #333;
+  color: #f1f1f1;
+}
+.character, .answers {
+  text-align: center;
+}
+.character-holder {
+  height: 450px;
+}
+.footer {
+  height: 60px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+
+.answers h3 {
+  font-style: italic;
+}

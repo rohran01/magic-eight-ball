@@ -4,13 +4,13 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             build: {
-                src: 'client/client.js',
-                dest: 'server/public/assets/scripts/client.min.js'
+                src: 'client/answerGenerator.js',
+                dest: 'server/public/assets/scripts/answerGenerator.min.js'
             }
         },
         watch: {
             scripts: {
-                files: ['client/client.js'],
+                files: ['client/answerGenerator.js'],
                 tasks: ['uglify'],
                 options: {
                     spawn: false

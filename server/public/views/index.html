@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" ng-app="eightBallApp">
 
 <head>
   <title>30 Rock Magic Eight Ball</title>
 
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+  <script src="vendor/angular/angular.min.js"></script>
+  <script src="../assets/scripts/answerGenerator.min.js"></script>
 
 </head>
 
-<body>
+<body ng-controller="AnswerController">
   <h1 class="jumbotron">Welcome to the 30 Rock Magic Eight Ball!</h1>
   <div>
     <h2>Liz Lemon</h2>
-    <button type="button" class="btn btn-lg btn-default">Read My Future</button>
+    <button type="button" class="btn btn-lg btn-default" ng-click="generateAnswer('liz')">Read My Future</button>
+    <p>{{quoteToDisplay}}</p>
   </div>
 </body>
 

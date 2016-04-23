@@ -10,8 +10,8 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['client/client.js', 'server/public/styles/sass/*.scss', 'server/public/styles/sass/**/*.scss'],
-                tasks: ['uglify', 'sass'],
+                files: ['client/client.js'],
+                tasks: ['uglify'],
                 options: {
                     spawn: false
                 }
@@ -29,26 +29,26 @@ module.exports = function(grunt) {
                 ],
                 "dest": "server/public/vendor/"
             }
-        },
-        sass: {
-            dist: {
-                options: {
-                    // sourceMap: auto
-                },
-                files: {
-                    'server/public/assets/styles/main.css': 'server/public/assets/styles/sass/main.scss'
-                }
-            }
         }
+        // sass: {
+        //     dist: {
+        //         options: {
+        //             // sourceMap: auto
+        //         },
+        //         files: {
+        //             'server/public/assets/styles/main.css': 'server/public/assets/styles/sass/main.scss'
+        //         }
+        //     }
+        // }
     });
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    // grunt.loadNpmTasks('grunt-contrib-sass');
 
 
     // Default task(s).
-    grunt.registerTask('default', ['copy', 'sass', 'uglify']);
+    grunt.registerTask('default', ['copy', 'uglify']);
 
 };

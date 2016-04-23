@@ -16,8 +16,17 @@ button {
 .character, .answers {
   text-align: center;
 }
+.answers {
+  height: 150px;
+}
 .character-holder {
-  height: 450px;
+  width: 100%;
+}
+.photo {
+  width: 90%;
+}
+.btn {
+  width: 90%;
 }
 .footer {
   height: 60px;

@@ -17,25 +17,25 @@
     <h1 class="title">The 30 Rock Magic 8 Ball App</h1>
   </div>
 
-  <div class="character-holder splash">
+  <div class="character-holder container">
     <div class="character col-md-3">
       <h2>Liz Lemon</h2>
-      <img class="img-rounded" src="assets/images/liz.jpg" />
+      <img class="photo img-rounded" src="assets/images/liz.jpg" />
       <button type="button" class="btn btn-lg btn-default" ng-click="generateAnswer('liz')">Let Liz Read Your Future</button>
     </div>
     <div class="character col-md-3">
       <h2>Jenna Maroney</h2>
-      <img class="img-rounded" src="assets/images/jenna.jpg" />
+      <img class="photo img-rounded" src="assets/images/jenna.jpg" />
       <button type="button" class="btn btn-lg btn-default" ng-click="generateAnswer('jenna')">Let Jenna Read Your Future</button>
     </div>
     <div class="character col-md-3">
       <h2>Tracy Morgan</h2>
-      <img class="img-rounded" src="assets/images/tracy.jpg" />
+      <img class="photo img-rounded" src="assets/images/tracy.jpg" />
       <button type="button" class="btn btn-lg btn-default" ng-click="generateAnswer('tracy')">Let Tracy Read Your Future</button>
     </div>
     <div class="character col-md-3">
       <h2>Jack Donaghy</h2>
-      <img class="img-rounded" src="assets/images/jack.jpg" />
+      <img class="photo img-rounded" src="assets/images/jack.jpg" />
       <button type="button" class="btn btn-lg btn-default" ng-click="generateAnswer('jack')">Let Jack Read Your Future</button>
     </div>
   </div>
@@ -45,7 +45,7 @@
     <h3>{{quoteToDisplay.quote}}</h3>
   </div>
 
-  <footer class="footer">
+  <footer id="answer" class="footer">
     <div class="container">
       <p>The 30 Rock Magic 8 Ball App</p>
     </div>

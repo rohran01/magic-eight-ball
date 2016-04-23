@@ -30,22 +30,11 @@ module.exports = function(grunt) {
                 "dest": "server/public/vendor/"
             }
         }
-        // sass: {
-        //     dist: {
-        //         options: {
-        //             // sourceMap: auto
-        //         },
-        //         files: {
-        //             'server/public/assets/styles/main.css': 'server/public/assets/styles/sass/main.scss'
-        //         }
-        //     }
-        // }
     });
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    // grunt.loadNpmTasks('grunt-contrib-sass');
 
 
     // Default task(s).

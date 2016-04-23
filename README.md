@@ -1,7 +1,7 @@
 # magic-eight-ball
 
 #Summary
-This application was created in six hours as a fun refresher challenge.  I hadn't used B in a while, as I am typically a CSS purist. I also wanted another run at SQL.
+This application was created in six hours as a fun refresher challenge.  I hadn't used Bootstrap in a while, as I am typically a bit of a CSS purist. I also wanted a quick SQL reminder.
 
 This project combines my love of a challenge with my adoration for the show 30 Rock.
 

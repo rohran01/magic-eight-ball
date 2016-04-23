@@ -3,7 +3,7 @@
 #Summary
 This application was created in six hours as a fun refresher challenge.  I hadn't used B in a while, as I am typically a CSS purist. I also wanted another run at SQL.
 
-This poject combines my love of a challenge with my adoration for the show 30 Rock.
+This project combines my love of a challenge with my adoration for the show 30 Rock.
 
 #Installation
  1. Pull down repo

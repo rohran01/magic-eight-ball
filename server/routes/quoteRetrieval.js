@@ -6,7 +6,6 @@ var connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/th
 
 var randomQuoteSelector = require('../modules/randomQuoteSelector');
 
-
 router.get('/', function(request, response) {
   console.log('quote retrieval hit');
 
@@ -17,11 +16,10 @@ router.get('/', function(request, response) {
 
   pg.connect(connectionString, function(error, client) {
 
-    var quotesReturned = client.query("SELECT * FROM test");
+    var quotesReturned = client.query('SELECT * FROM ' + characterRequested);
 
     quotesReturned.on('row', function(row) {
       quotesToSelectFrom.push(row);
-
     });
 
     quotesReturned.on('end', function() {
@@ -29,9 +27,7 @@ router.get('/', function(request, response) {
       client.end();
       return response.json(quoteToSend);
     })
-
   })
-
 });
 
 module.exports = router;

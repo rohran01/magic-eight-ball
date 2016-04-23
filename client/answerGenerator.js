@@ -10,7 +10,7 @@ app.controller('AnswerController', ['$scope', '$http', function($scope, $http) {
 
     $http.get('/quote', characterToRequest).then(function(response) {
       console.log(response);
-      $scope.quoteToDisplay = response.data.quote;
+      $scope.quoteToDisplay = response.data;
     })
   }
 

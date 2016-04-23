@@ -6,7 +6,7 @@ var randomQuoteSelector = function(quotesToSelectFrom) {
     var min = 1;
 
     var randomIndex = Math.floor(Math.random() * (1 + max - min) + min);
-    var quoteToSend = {quote: quotesToSelectFrom[randomIndex - 1].quote};
+    var quoteToSend = {answer: quotesToSelectFrom[randomIndex - 1].answer, quote: quotesToSelectFrom[randomIndex - 1].quote};
 
     return quoteToSend;
 };

@@ -13,11 +13,24 @@
 
 <body ng-controller="AnswerController">
   <h1 class="jumbotron">Welcome to the 30 Rock Magic Eight Ball!</h1>
-  <div>
+  <div class="col-md-3">
     <h2>Liz Lemon</h2>
     <button type="button" class="btn btn-lg btn-default" ng-click="generateAnswer('liz')">Read My Future</button>
-    <p>{{quoteToDisplay}}</p>
   </div>
+  <div class="col-md-3">
+    <h2>Jenna Maroney</h2>
+    <button type="button" class="btn btn-lg btn-default" ng-click="generateAnswer('jenna')">Read My Future</button>
+  </div>
+  <div class="col-md-3">
+    <h2>Tracy Morgan</h2>
+    <button type="button" class="btn btn-lg btn-default" ng-click="generateAnswer('tracy')">Read My Future</button>
+  </div>
+  <div class="col-md-3">
+    <h2>Jack Donaghy</h2>
+    <button type="button" class="btn btn-lg btn-default" ng-click="generateAnswer('jack')">Read My Future</button>
+  </div>
+  <p>{{quoteToDisplay.answer}}</p>
+  <p>{{quoteToDisplay.quote}}</p>
 </body>
 
 </html>
